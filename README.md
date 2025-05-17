@@ -1,6 +1,8 @@
 # matlab
+
 basic mathematical code
-1. Newton Forward difference.
+<ol>
+<li> <b>Newton Forward difference.</b></li>
    Newton's Forward Interpolation (NFI):
 
 NFI is a method to estimate the value of a function at a point between known data points. It works by using a difference table (forward differences) 
@@ -44,7 +46,7 @@ The interpolated value at x = 2.5 is 6.25.
 
 
 
-2. Newton BAckward differnece.
+<li><b>Newton BAckward difference.</b></li></ol>
 
 1. Forward vs. Backward Differences:
 

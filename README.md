@@ -40,3 +40,25 @@ Using the Forward Difference Table to Interpolate:
            = 6.25
 
 The interpolated value at x = 2.5 is 6.25.
+
+
+
+
+2. Newton BAckward differnece.
+
+1. Forward vs. Backward Differences:
+
+Forward differences use y[i][j] = y[i-1][j+1] - y[i-1][j], starting from the beginning of the data.
+Backward differences use y[i][j] = y[i-1][j] - y[i-1][j-1], starting from the end of the data.
+
+
+2. Innterpolation Formula:
+
+Forward interpolation uses u = (value - x[0]) / h and terms like (u - j) / (j + 1).
+Backward interpolation uses u = (value - x[n-1]) / h (relative to the last x-value) and terms like (u + j) / (j + 1).
+
+
+3. Accessing the Difference Table:
+
+Forward interpolation uses y[i][0] (first column of each row).
+Backward interpolation uses y[i][n-i-1] (last non-zero element in each row).

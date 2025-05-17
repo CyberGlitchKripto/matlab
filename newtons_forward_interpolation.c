@@ -3,16 +3,16 @@
 
 
 // Function to calculate forward difference table
-void forward_difference(float x[], float y[][MAX], int n) {   //ekahne forward dff theke float nebo 2 tor-> x,y er, x-single, y mingle with max gf with n bitch.
+void forward_difference(float x[], float y[][MAX], int n) {   //ekahne forward dff theke float nebo 2 tor-> x,y er, x-single, y mingle with max gf with n girl.
     for (int i = 1; i < n; i++) {                    // i mane akta gf hobei 
-        for (int j = 0; j < n - i; j++) {            // j= single sala, i er gf dekhe jole jay
-            y[i][j] = y[i - 1][j + 1] - y[i - 1][j];  // difference bar korlam
+        for (int j = 0; j < n - i; j++) {            // j= because he is single he got jealous , seeing I;s gf
+            y[i][j] = y[i - 1][j + 1] - y[i - 1][j];  // find difference
         }
     }
 }
 
 // Newton's Forward Interpolation Function
-float NFI(float x[], float y[][MAX], int n, float value) {// ager tai moto just x abar y ke tar value dekhachhe
+float NFI(float x[], float y[][MAX], int n, float value) {// take previous one 
     float h = x[1] - x[0];  // Assuming uniform spacing
     float u = (value - x[0]) / h;
     float result = y[0][0];  // Start with the first y-value
@@ -22,7 +22,7 @@ float NFI(float x[], float y[][MAX], int n, float value) {// ager tai moto just 
         for (int j = 0; j < i; j++) {  // ebar j satisfy
             term *= (u - j) / (j + 1);   // no need to do factorial, this part did that.....
         }
-        result += term; // term ke update kor
+        result += term; // term update
     }
     return result;
 }
